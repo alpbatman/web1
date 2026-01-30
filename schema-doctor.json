@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Op. Dr. Muzaffer Öztürk",
+  "url": "https://www.drmuzafferozturk.com",
+  "image": "https://www.drmuzafferozturk.com/foto2.jpg",
+  "medicalSpecialty": ["Ophthalmology"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ataköy 7-8-9-10. Kısım Mah. E-5 Çobançeşme Yanyol Caddesi, Selenium Retro Sitesi A Blok No:18-1, Kat:15",
+    "addressLocality": "İstanbul",
+    "postalCode": "34158",
+    "addressCountry": "TR"
+  },
+  "telephone": "+905327207072",
+  "sameAs": [
+    "https://www.doktortakvimi.com"
+  ]
+}

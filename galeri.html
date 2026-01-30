@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muayenehaneden Görüntüler | Op. Dr. Muzaffer Öztürk</title>
+	
+<!-- SEO -->	
+	<meta name="description" content="Op. Dr. Muzaffer Öztürk’ün muayenehanesinden görüntüler. Modern, konforlu ve hasta odaklı muayene ortamı.">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://www.drmuzafferozturk.com/galeri.html">
+	<meta property="og:title" content="Muayenehaneden Görüntüler | Op. Dr. Muzaffer Öztürk">
+	<meta property="og:description" content="Modern muayene ortamı ve hasta konforunu yansıtan muayenehane görüntüleri.">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="tr_TR">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+
+<header class="header">
+
+    <div class="header-left">
+
+        <div class="header-profile">
+
+            <img src="logo.png"
+                 alt="Op. Dr. Muzaffer Öztürk Logo"
+                 class="site-logo">
+
+            <img src="foto2.jpg"
+                 alt="Op. Dr. Muzaffer Öztürk"
+                 class="doctor-photo">
+
+            <div>
+                <h1>Op. Dr. Muzaffer Öztürk</h1>
+                <h2>Göz Hastalıkları Uzmanı</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="display:flex; flex-direction:column; align-items:center;">
+        <button class="dark-switch" onclick="toggleDark()">🌓</button>
+        <div class="dark-switch-label">Koyu Tema</div>
+    </div>
+
+</header>
+
+<hr class="soft-divider">
+
+<section class="simple-section">
+    <h3>Muayenehaneden Görüntüler</h3>
+    <p class="note">
+        Hasta konforu ve modern muayene ortamından kareler.
+    </p>
+</section>
+
+<section class="info-box gallery-grid">
+
+<div class="card">
+        <img src="m0.jpg"
+             alt="Hasta Kayıt ve Kabul Masası"
+             style="width:100%; border-radius:12px; margin-bottom:10px;">
+        <h3>Hasta Kayıt ve Kabul Masası</h3>
+        <p>
+            Sağlık yolculuğunuzun ilk adımı: Güler yüzlü ekibimizle etkin hasta kayıt ve koordinasyon.
+        </p>
+    </div>   
+
+   <div class="card">
+        <img src="m1.jpg"
+             alt="Kabul Salonu"
+             style="width:100%; border-radius:12px; margin-bottom:10px;">
+        <h3>Kabul Salonu</h3>
+        <p>
+            Muayene öncesi bekleme süreciniz için konforlu ve huzurlu bir kabul salonu.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="m2.jpg"
+             alt="Doktor Görüşme Alanı"
+             style="width:100%; border-radius:12px; margin-bottom:10px;">
+        <h3>Doktor Görüşme Alanı</h3>
+        <p>
+            Doktor–hasta görüşmelerinin sakin, gizlilik esaslı ve birebir yapıldığı alan.
+        </p>
+    </div>
+
+	<div class="card">
+        <img src="m5.jpg"
+             alt="Muayene Alanı"
+             style="width:100%; border-radius:12px; margin-bottom:10px;">
+        <h3>Muayene Alanı</h3>
+        <p>
+            Ölçüm ve tetkiklerin, modern cihazlar ve muayene koltuğu eşliğinde gerçekleştirildiği muayene alanı.
+        </p>
+    </div>
+	
+		
+    <div class="card">
+        <img src="m3.jpg"
+             alt="Klinik Uygulama Odası"
+             style="width:100%; border-radius:12px; margin-bottom:10px;">
+        <h3>Klinik Uygulama Odası</h3>
+        <p>
+            Küçük müdahaleler ve göz içi enjeksiyonların güvenle gerçekleştirildiği Steril alan.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="m4.jpg"
+             alt="Optik Ölçüm Odası"
+             style="width:100%; border-radius:12px; margin-bottom:10px;">
+        <h3>Optik Ölçüm Odası</h3>
+        <p>
+            İleri tanı olanakları sunan, OCT, otorefraktometre ve havalı tonometre cihazları ile ileri düzey göz ölçümlerinin yapıldığı alan.
+        </p>
+    </div>
+
+</section>
+
+<section class="appointment">
+    <div class="buttons center">
+        <a href="index.html">← Ana Sayfaya Dön</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Op. Dr. Muzaffer Öztürk
+</footer>
+
+</main>
+
+<script>
+function toggleDark() {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("dark", document.body.classList.contains("dark"));
+}
+if (localStorage.getItem("dark") === "true") {
+    document.body.classList.add("dark");
+}
+</script>
+
+</body>
+</html>

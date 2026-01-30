@@ -1,0 +1,208 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ROOT */
+:root {
+    --bg: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --card: #f9fafb;
+    --accent: #2563eb;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --border: #334155;
+    --card: #020617;
+    --accent: #60a5fa;
+}
+
+/* BODY */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px; /* masaüstü */
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 28px 20px 40px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.site-logo {
+    width: 90px;
+}
+
+.doctor-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+/* DARK MODE */
+.dark-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dark-switch {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.dark-switch-label {
+    font-size: 0.75rem;
+    color: var(--muted);
+}
+
+/* DIVIDER */
+.soft-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 30px 0;
+}
+
+/* INFO BOX */
+.info-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.buttons a {
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .header-profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-box {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ================= FORCE MOBILE SINGLE COLUMN ================= */
+@media screen and (max-width: 1024px) {
+
+    .info-box {
+        display: block !important;
+    }
+
+    .info-box .card {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+	
+	.site-logo {
+    width: 90px;
+}
+
+.doctor-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+    /* 🔥 MOBİL FONT BÜYÜTME */
+    body {
+        font-size: 27px;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    h3 {
+        font-size: 2.25rem;
+    }
+
+    p, li, a {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+}
